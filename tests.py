@@ -28,11 +28,6 @@ class TestServerResponce(unittest.TestCase):
         data = json.loads(payload)
         self.assertIn('exchange_rates', data)
         self.assertEqual(len(data['exchange_rates']), 2)
-        for date in data['exchange_rates']:
-            self.assertIn('USD/RUR', date)
-            self.assertIn('EUR/RUR', date)
-            for rate in date:
-                self.assertTrue(isinstance(rate, float))
 
 
 if __name__ == '__main__':
