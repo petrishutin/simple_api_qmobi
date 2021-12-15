@@ -1,3 +1,6 @@
+_Test task to create web server without ANY additional libraries_
+
+
 Simple api service parses USD/RUR EUR/RUR exchange rates from 'http://cbr.ru' and returns as a json string.
 By default, local address is "/0.0.0.0:8080/"
 
